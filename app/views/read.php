@@ -4,6 +4,7 @@
             <a href="./create" class="btn btn-outline-success">Agregar Contacto</a>
             <a href="./readCategoria" class="btn btn-outline-dark">Categorias</a>
             <a href="./home" class="btn btn-info">Go back</a>
+            <a href="./close" class="btn btn-danger">close</a>
             <hr>
             <table class="table table-primary table-striped table-hover table-bordered table-sm table-responsive-sm">
                 <thead>

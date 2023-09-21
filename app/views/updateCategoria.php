@@ -2,7 +2,8 @@
     <div class="row">
         <div class="col">
             <h1>Actualizar Categoria</h1>
-            <a href="./home" class="btn btn-info">Go back</a>
+            <a href="./readCategoria" class="btn btn-info">Go back</a>
+            <a href="./close" class="btn btn-danger">Cerrar Session</a>
             <div>
                 <input type="text" hidden value="<?php echo $categoria['id']?>" id="id">
                 <div class="mb-3">

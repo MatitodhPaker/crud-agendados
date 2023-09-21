@@ -3,6 +3,7 @@
         <div class="col">
             <h1>Crear Categoria</h1>
             <a href="./readCategoria" class="btn btn-info">Go back</a>
+            <a href="./close" class="btn btn-danger">close</a>
             <div>
                 <div class="mb-3">
                     <label for="nombre" class="form-label">Nombre de categoria</label>

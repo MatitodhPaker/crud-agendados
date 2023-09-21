@@ -3,6 +3,7 @@
         <div class="col">
             <h1>Crear Contacto</h1>
             <a href="./read" class="btn btn-info">Go back</a>
+            <a href="./close" class="btn btn-danger">Cerrar Session</a>
             <div>
                 <div class="mb-3">
                     <label for="nombre" class="form-label">Nombre</label>

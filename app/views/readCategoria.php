@@ -3,6 +3,7 @@
         <div class="col">
             <a href="./createCategoria" class="btn btn-outline-success">Agregar Categoria</a>
             <a href="./read" class="btn btn-info">Go back</a>
+            <a href="./close" class="btn btn-danger">close</a>
             <hr>
             <table class="table table-primary table-striped table-hover table-bordered table-sm table-responsive-sm">
                 <thead>

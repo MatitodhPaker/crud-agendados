@@ -3,8 +3,10 @@
         <div class="col">
             <h1 class="display-1">CRUD PHP</h1>
             <p class="fs-4 text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia aliquam cupiditate enim omnis labore ipsam earum, atque, commodi libero ea maxime exercitationem minima! Aliquid natus nisi assumenda vero ipsa voluptates!</p>
-
-            <a href="./read" class="btn btn-success">Acceder al CRUD</a>
+            <button id="session" type="button" class="btn btn-success">Acceder al CRUD</button>
         </div>
     </div>
 </div>
+<?php
+    require "./app/controller/session.controller.php"
+?>

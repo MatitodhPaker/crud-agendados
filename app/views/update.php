@@ -6,7 +6,8 @@
     <div class="row">
         <div class="col">
             <h1>Actualizar Contacto</h1>
-            <a href="./home" class="btn btn-info">Go back</a>
+            <a href="./read" class="btn btn-info">Go back</a>
+            <a href="./close" class="btn btn-danger">close</a>
             <div>
                 <input type="text" hidden value="<?php echo $contacto['id']?>" id="id">
                 <div class="mb-3">
