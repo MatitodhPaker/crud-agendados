@@ -1,26 +1,34 @@
 <script>
     $(document).ready(()=>{
-        $('#inicio').click(()=>{
-            let nombre=$('#nombreU').val();
-            let pass=$('#passU').val();
+        $('#registrar').click(()=>{
+            let nombre=$('#nombre').val();
+            let pass=$('#pass').val();
             let ExpReg=["^[A-ZÑa-zñáéíóúÁÉÍÓÚ'° ]+$","^[0-9A-ZÑa-zñ]+$"];
             if (nombre&&pass) {
                 if (nombre.match(ExpReg[0])) {
                     if (pass.match(ExpReg[1])) {
                         $.ajax({
-                                url:"./app/model/process/session.process.php",
+                                url:"./app/model/process/createUser.process.php",
                                 data: {
                                     nombre,
                                     pass
                                 },
                                 type: "POST",
                                 success:()=>{
-                                    window.location="./read"
+                                    Swal.fire({
+                                        title:'Todo ok :)',
+                                        text:'Nuevo usuario agregado',
+                                        icon:'success',
+                                        confirmButtonColor: '#3085d6',
+                                        confirmButtonText:'OK!!'
+                                    }).then((result)=>{
+                                        window.location="./home"
+                                    })
                                 },
                                 error:()=>{
                                     Swal.fire(
                                         'Error!!!',
-                                        'Falla al iniciar session',
+                                        'Falla al agregar',
                                         'error'
                                     )
                                 }
@@ -46,6 +54,6 @@
                     'error'
                 )
             }
-        })
-    })
+        });
+    });
 </script>

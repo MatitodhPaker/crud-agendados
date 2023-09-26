@@ -1,7 +1,7 @@
 <?php
     require "../crud.class.php";
     $crud= new Crud();
-    $login=$crud->login([
+    $crud -> createUser([
         "nombre"=>$_POST['nombre'],
         "pass"=>$_POST['pass']
     ]);

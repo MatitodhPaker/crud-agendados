@@ -25,7 +25,7 @@
                     break;
                 case 'read':
                     if (isset($_SESSION['id_session'])) {
-                        $contactos=$crud->read();
+                        $contactos=$crud->read($_SESSION['id_session']);
                         include './app/views/read.php';
                     }else{
                         header("location: ./home");
